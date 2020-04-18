@@ -16,6 +16,7 @@ html(lang="ja")
     form(method="post" action="/posts")
       div.form-group
         textarea(name="content" rows="4").form-control
+        input(type="hidden", name="oneTimeToken" value=oneTimeToken)
       div.form-group
         button(type="submit").btn.btn-primary 投稿
 
